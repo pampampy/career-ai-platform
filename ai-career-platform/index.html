@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerAI - Ваш персональный карьерный консультант</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Добро пожаловать в CareerAI</h1>
+        <p>Ваш персональный помощник в карьерном развитии</p>
+
+        <!-- Начало блока profile-section -->
+        <div id="profile-section">
+            <button id="load-profile-btn">Загрузить мой профиль</button>
+            <div id="profile-data" style="display: none;">
+                <h2>Ваш профиль</h2>
+                <p>Имя: <span id="user-name">Иван Иванов</span></p>
+                <p>Должность: <span id="user-position">Разработчик</span></p>
+            </div>
+        <div id="profile-editor" style="display: none;">
+          <h2>Редактирование профиля</h2>
+          <form id="profile-form">
+              <input type="text" placeholder="Имя" id="user-name-input">
+              <input type="text" placeholder="Должность" id="user-position-input">
+              <textarea placeholder="Навыки (через запятую)" id="skills-input"></textarea>
+              <button type="submit">Сохранить</button>
+              <button id="edit-profile-btn">Редактировать профиль</button>
+          </form>
+        </div>
+        <div id="ai-chat">
+          <div class="chat-messages">
+            <div class="message ai-message">Привет! Я ваш карьерный помощник. Чем могу помочь?</div>
+          </div>
+          <div class="chat-input">
+              <input type="text" placeholder="Задайте вопрос...">
+              <button>Отправить</button>
+          </div>
+        </div>
+            <!-- ВСТАВЬТЕ ЭТОТ БЛОК ПРЯМО ЗДЕСЬ -->
+            <div id="gamification">
+                <h3>Ваш прогресс</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 30%;">30%</div>
+                </div>
+                <p>Заполните профиль на 100%, чтобы получить бейдж "Пионер"!</p>
+            </div>
+            <!-- КОНЕЦ БЛОКА ДЛЯ ВСТАВКИ -->
+        <div class="badges">
+            <div class="badge" title="Пионер - за заполнение профиля">
+                <img src="badge-pioneer.png" alt="Пионер">
+            </div>
+            <div class="badge locked" title="Эксперт - заработать 1000 очков">
+                <img src="badge-locked.png" alt="Заблокировано">
+            </div>
+        </div>
+    </div>
+        <!-- Конец блока profile-section -->
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
